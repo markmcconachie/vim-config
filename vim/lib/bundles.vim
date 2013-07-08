@@ -11,7 +11,10 @@ Bundle 'gmarik/vundle'
 Bundle 'markmcconachie/vimtestic'
 Bundle 'scrooloose/nerdtree'
 
+Bundle 'scrooloose/syntastic'
+
 Bundle 'tpope/vim-sleuth'
+Bundle 'tpope/vim-fugitive'
 Bundle 'sjl/vitality.vim'
 Bundle 'spf13/vim-autoclose'
 Bundle 'tpope/vim-sensible'
@@ -25,7 +28,7 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'kchmck/vim-coffee-script'
 
 Bundle 'hail2u/vim-css3-syntax'
-
+Bundle 'mileszs/ack.vim'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-cucumber'
 Bundle 'vim-ruby/vim-ruby'

@@ -8,6 +8,8 @@ syntax on                               "Highlight Syntax
 set exrc
 set secure
 
+set numberwidth=4
+
 set viewoptions=folds,options,cursor,unix,slash
 set virtualedit=onemore                 "Allow for cursor beyond last character
 set history=1000                        "Store a ton of history (default is 20)

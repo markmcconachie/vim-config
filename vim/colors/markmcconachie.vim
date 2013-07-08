@@ -7,8 +7,8 @@ hi pythonSpaceError ctermbg=red guibg=red
 
 hi Comment ctermfg=darkgray
 
-hi StatusLine ctermbg=255 ctermfg=239
-hi StatusLineNC ctermbg=249 ctermfg=235
+hi StatusLine ctermbg=239 ctermfg=255 cterm=NONE
+hi StatusLineNC ctermbg=235 ctermfg=245 cterm=NONE
 hi VertSplit ctermbg=236 ctermfg=235
 hi LineNr ctermfg=darkgray
 hi CursorLine     ctermfg=255        ctermbg=235
@@ -29,3 +29,8 @@ highlight DiffText term=reverse cterm=bold ctermbg=lightgray ctermfg=16
 highlight DiffDelete term=reverse cterm=bold ctermbg=lightred ctermfg=16
 
 highlight PmenuSel ctermfg=16 ctermbg=156
+
+" Status line colors
+hi User1  ctermfg=7 ctermbg=NONE
+hi User2  ctermfg=240 ctermbg=NONE " File Flag
+hi User4  ctermfg=Green ctermbg=NONE   " Fugitive
