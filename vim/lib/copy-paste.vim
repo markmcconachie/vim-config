@@ -1,2 +1,2 @@
-nnoremap <leader>p "+p
-noremap <leader>y "+y
+nnoremap <leader>p "*p
+noremap <leader>y "*y

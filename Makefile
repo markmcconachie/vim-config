@@ -10,7 +10,7 @@ install-vundle:
 	git submodule update
 
 update-bundles:
-	vim +BundleInstall +qall	
+	vim +NeoBundleInstall +qall
 
 clean:
 	rm -rf ~/.vim*

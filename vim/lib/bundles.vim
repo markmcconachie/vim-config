@@ -1,36 +1,55 @@
-set nocompatible
+ if has('vim_starting')
+   set nocompatible               " Be iMproved
 
-filetype off
+   " Required:
+   set runtimepath+=~/.vim/bundle/neobundle.vim/
+ endif
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+ " Required:
+ call neobundle#rc(expand('~/.vim/bundle/'))
 
-" let Vundle manage Vundle
-Bundle 'gmarik/vundle'
+ NeoBundleFetch 'Shougo/neobundle.vim'
 
-Bundle 'markmcconachie/vimtestic'
-Bundle 'scrooloose/nerdtree'
+NeoBundle 'markmcconachie/vimtestic'
 
-Bundle 'scrooloose/syntastic'
+NeoBundle 'scrooloose/syntastic'
 
-Bundle 'tpope/vim-sleuth'
-Bundle 'tpope/vim-fugitive'
-Bundle 'sjl/vitality.vim'
-Bundle 'spf13/vim-autoclose'
-Bundle 'tpope/vim-sensible'
-Bundle 'kien/ctrlp.vim'
+NeoBundle 'tpope/vim-sleuth'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'spf13/vim-autoclose'
+NeoBundle 'tpope/vim-sensible'
+NeoBundle 'tpope/vim-vinegar'
 
-Bundle 'tpope/vim-commentary'
+NeoBundle 'Shougo/vimproc', {
+      \ 'build' : {
+      \     'windows' : 'make -f make_mingw32.mak',
+      \     'cygwin' : 'make -f make_cygwin.mak',
+      \     'mac' : 'make -f make_mac.mak',
+      \     'unix' : 'make -f make_unix.mak',
+      \    },
+      \ }
 
-Bundle 'leshill/vim-json'
-Bundle 'pangloss/vim-javascript'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/unite-outline'
+NeoBundle 'Shougo/unite-help'
+NeoBundle 'Shougo/unite-session'
+NeoBundle 'Shougo/neomru.vim'
+NeoBundle 'thinca/vim-unite-history'
 
-Bundle 'kchmck/vim-coffee-script'
+NeoBundle 'Shougo/neocomplcache.vim'
 
-Bundle 'hail2u/vim-css3-syntax'
-Bundle 'mileszs/ack.vim'
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-cucumber'
-Bundle 'vim-ruby/vim-ruby'
+NeoBundle 'tpope/vim-commentary'
+
+NeoBundle 'leshill/vim-json'
+NeoBundle 'pangloss/vim-javascript'
+
+
+NeoBundle 'hail2u/vim-css3-syntax'
+NeoBundle 'mileszs/ack.vim'
+NeoBundle 'tpope/vim-rails'
+NeoBundle 'tpope/vim-cucumber'
+NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'kchmck/vim-coffee-script'
 
 filetype plugin indent on
+
