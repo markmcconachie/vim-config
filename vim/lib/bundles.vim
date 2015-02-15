@@ -5,8 +5,8 @@
    set runtimepath+=~/.vim/bundle/neobundle.vim/
  endif
 
- " Required:
- call neobundle#rc(expand('~/.vim/bundle/'))
+" Required:
+call neobundle#begin(expand('~/.vim/bundle/'))
 
  NeoBundleFetch 'Shougo/neobundle.vim'
 
@@ -50,6 +50,8 @@ NeoBundle 'tpope/vim-rails'
 NeoBundle 'tpope/vim-cucumber'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'kchmck/vim-coffee-script'
+
+call neobundle#end()
 
 filetype plugin indent on
 
