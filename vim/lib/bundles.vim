@@ -41,15 +41,6 @@ NeoBundle 'Shougo/neocomplcache.vim'
 NeoBundle 'tpope/vim-commentary'
 
 NeoBundle 'leshill/vim-json'
-NeoBundle 'pangloss/vim-javascript'
-
-
-NeoBundle 'hail2u/vim-css3-syntax'
-NeoBundle 'mileszs/ack.vim'
-NeoBundle 'tpope/vim-rails'
-NeoBundle 'tpope/vim-cucumber'
-NeoBundle 'vim-ruby/vim-ruby'
-NeoBundle 'kchmck/vim-coffee-script'
 
 call neobundle#end()
 
